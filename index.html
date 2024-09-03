@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Store</title>
+    <style>
+        /* Reset some default styles */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Global styles */
+        body {
+            background-color: #fcdef0;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #faa2d5;
+            color: cyan;
+            text-align: center;
+            font-family: "Lucida Handwriting";
+            text-shadow: 0px 4px 4px #282828;
+            padding: 0.001rem;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #ff61bd;
+            display: flex;
+            justify-content: center;
+            padding: 0.0001rem 0;
+            font-family: "Arial Black";
+        }
+
+        nav a {
+            color: cyan;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff61bd;
+            font-weight: bold;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: #fc3776;
+            text-decoration: none;
+        }
+
+        /* Banner styles */
+        .banner {
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-pink-purple-gradient-beautiful-gradient-gradient-geometric-image_11522.jpg');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: cyan;
+            font-family: "Copperplate Gothic Light";
+            font-size: 2rem;
+            text-shadow: 0px 4px 4px #282828;
+        }
+
+        /* Product grid styles */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 1rem;
+            padding: 2rem;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+            background-color: #daf5f7;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-card h3 {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .product-card p {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #ff61bd;
+            color: cyan;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Aditya Collection</h1>
+    </header>
+
+    <nav>
+        <a href="https://dress.ccbp.tech/">Home</a>
+        <a href="https://tooltrendz.blogspot.com/p/product.html">Products</a>
+        <a href="https://tooltrendz.blogspot.com/p/contact_28.html">Contact</a>
+    </nav>
+
+    <div class="banner">
+        <h2>Discover Your Perfect Dress</h2>
+    </div>
+
+    <div class="product-grid">
+        <!-- Sample product cards (customize as needed) -->
+        <a href="https://www.ajio.com/masakali-co-floral-print-fit--flare-dress/p/464497062_pink">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230623/OgD2/6494d331d55b7d0c63a73c9b/-473Wx593H-464497062-pink-MODEL.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/masakali-co-floral-print-fit--flare-dress/p/464694973_blue">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230623/Qmzq/6494d6dd42f9e729d780084f/-473Wx593H-464500189-blue-MODEL.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/fashion-2-wear-floral-print-round-neck-fit--flare-dress/p/466349159_navy">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230711/Tes3/64ad303da9b42d15c94be503/-473Wx593H-466349159-navy-MODEL.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/aayu-all-about-you-swiss-dot-tiered-dress/p/465910016_purple">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230628/ezyf/649bb765a9b42d15c907e43e/-473Wx593H-465910016-purple-MODEL.jpg" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/hetvi-creation-floral-print-fit--flare-dress/p/466207908_blue">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230529/56H9/6474c66742f9e729d7f259c4/-473Wx593H-466207908-blue-MODEL.jpg" alt="Product 5">
+                <h3>Product 5</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/aks-printed-off-shoulder-fit--flare-dress/p/462641068_blue">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230602/nxAM/64798c5542f9e729d7179ee2/-473Wx593H-462641068-blue-MODEL.jpg" alt="Product 6">
+                <h3>Product 6</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/hetvi-creation-floral-print-fit--flare-dress/p/466207914_green">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230529/o48d/6474ac70d55b7d0c631b90a6/-473Wx593H-466207914-green-MODEL.jpg" alt="Product 7">
+                <h3>Product 7</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/trillmixa-floral-fit-and-flare-dress/p/466154196_blue">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230627/68bO/649a110ea9b42d15c9f566ad/-473Wx593H-466308171-blue-MODEL.jpg" alt="Product 8">
+                <h3>Product 8</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/hetvi-creation-floral-print-fit--flare-dress/p/466214258_pink">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230530/0R4Y/647623a142f9e729d7ffa193/-473Wx593H-466214258-pink-MODEL.jpg" alt="Product 9">
+                <h3>Product 9</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/hetvi-creation-round-neck-fit--flare-dress/p/466094969_pink">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230629/WWg8/649cd4e8a9b42d15c91c7cc2/-473Wx593H-466094969-pink-MODEL.jpg" alt="Product 10">
+                <h3>Product 10</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/trillmixa-floral-print-fit--flare-dress/p/466232255_turquoise">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230623/08Op/6495d64ceebac147fce0b457/-473Wx593H-466302536-turquoise-MODEL3.jpg" alt="Product 11">
+                <h3>Product 11</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/fashion-2-wear-floral-print-fit--flare-dress/p/466336981_blue">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230706/M3zK/64a66c44eebac147fc516b5e/-473Wx593H-466336981-blue-MODEL.jpg" alt="Product 12">
+                <h3>Product 12</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/fashion-2-wear-floral-print-fit--flare-dress/p/466308147_pink">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230626/kwhz/64999445a9b42d15c9f305ae/-473Wx593H-466308147-pink-MODEL.jpg" alt="Product 13">
+                <h3>Product 13</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/aarke-ritu-kumar-floral-print-co-ord-set/p/410334351_navy">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230320/GgDQ/64188e62aeb26924e3cfd7fe/-473Wx593H-410334351-navy-MODEL.jpg" alt="Product 14">
+                <h3>Product 14</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/label-ritu-kumar-floral-print-fit--flare-dress/p/410318622_black">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20220909/iLE4/631a3d9ef997dd1f8deecd7f/-473Wx593H-410318622-black-MODEL2.jpg" alt="Product 15">
+                <h3>Product 15</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/ritu-kumar-floral-print-straight-kurta--sahara-set-with-dupatta/p/410332754_black">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20220916/hWeB/6324609af997dd1f8d049178/-473Wx593H-410332754-black-MODEL4.jpg" alt="Product 16">
+                <h3>Product 16</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/hetvi-creation-floral-print-gown-dress/p/465798795_green">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230628/QoaK/649bad59eebac147fc1cacce/-473Wx593H-465798795-green-MODEL.jpg" alt="Product 17">
+                <h3>Product 17</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/aayumi-floral-print-gown-dress/p/464219412_grey">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230621/xy1i/6492924842f9e729d76999f2/-473Wx593H-464219412-grey-MODEL.jpg" alt="Product 18">
+                <h3>Product 18</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/zinzraa-floral-print-anarkali-kurta-set/p/466257076_black">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230609/oyUo/648352c1d55b7d0c635e69a1/-473Wx593H-466257076-black-MODEL.jpg" alt="Product 19">
+                <h3>Product 19</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+        <a href="https://www.ajio.com/souchii-floral-print-fit-and-flare-dress/p/466283040_peach">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230616/wk0j/648c8f4042f9e729d7488671/-473Wx593H-466283040-peach-MODEL.jpg" alt="Product 20">
+                <h3>Product 20</h3>
+                <p>Price: 990 Rs</p>
+            </div>
+        </a>
+
+
+        <!-- Add more product cards here -->
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Dress Store. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
